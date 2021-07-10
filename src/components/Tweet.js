@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../styles/App.css'
 
 export default class Tweet extends Component {
   render() {
@@ -12,7 +13,7 @@ export default class Tweet extends Component {
       alert(`Tweet is Liked`);
     };
     return (
-      <div>
+      <div className="tweet-individual">
         <h2>UserName : {this.props.name}</h2>
         <h3>{this.props.tweet.message}</h3>
         <button onClick={likeTweet}>Like</button>

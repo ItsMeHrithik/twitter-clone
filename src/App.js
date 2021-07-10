@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CreateTweet from "./components/CreateTweet";
 import TweetList from "./components/TweetList";
 
+
 function App() {
   const [textInput, setTextInput] = useState("");
   const [tweets, setTweets] = useState([]);
@@ -15,7 +16,7 @@ function App() {
         tweets={tweets}
         setTweets={setTweets}
       />
-      <TweetList name={name}  tweets={tweets} setTweets={setTweets}/>
+      <TweetList name={name} tweets={tweets} setTweets={setTweets} />
     </div>
   );
 }
