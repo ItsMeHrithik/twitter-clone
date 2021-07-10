@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-const CreateTweet = () => {
-  const [textInput, setTextInput] = useState("");
-  const [tweets, setTweets] = useState([]);
+const CreateTweet = ({textInput, setTextInput, tweets, setTweets}) => {
+
 
   const userInputHandler = (e) => {
     setTextInput(e.target.value);
